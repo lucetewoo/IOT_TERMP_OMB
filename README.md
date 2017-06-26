@@ -10,6 +10,10 @@ SMART MOBILE
 2012136082  우재형 </br>
 2012136139  최형근 </br>
 
+</br>
+</br>
+</br>
+
 *YOUTUBE영상* </br>
 1. 1차 - 하나의 센서감지 </br>
 https://www.youtube.com/watch?v=eU7iFEcnT9w </br>
