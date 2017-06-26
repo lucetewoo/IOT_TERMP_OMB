@@ -1,6 +1,7 @@
 import os
 import threading
 from firebase import firebase
+import time
 
 def gas() :
     os.system("sudo ./gas")
@@ -29,11 +30,15 @@ def upload(f) :
         h = open("humidity.txt", "r")
         humi = h.readline()
 
+        print("*******************************")
+
         upload_gas = f.patch('/gas', {'gas' : int(gasValue)});
         upload_max = f.patch('/max', {'max' : int(maxValue)});
         upload_min = f.patch('/min', {'min' : int(minValue)});
         upload_temp = f.patch('/temp', {'temp' : int(temp)});
         upload_humi = f.patch('/humi', {'humi' : int(humi)});
+
+        time.sleep(0.5)
 
 fire = firebase.FirebaseApplication('https://ohmybaby-60436.firebaseio.com', None)
 
